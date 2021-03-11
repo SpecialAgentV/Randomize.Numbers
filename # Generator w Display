@@ -1,0 +1,13 @@
+
+const main = document.querySelector ("main");
+const inputLow = prompt (`Choose a low number`);
+const inputHigh = prompt (`Choose a high number`);
+
+if (+inputLow && +inputHigh){
+const display = Math.floor (Math.random () * (+inputHigh - +inputLow) + 1) + +inputLow;
+main.innerHTML = `<h1>You got a ${display} between ${inputLow} and ${inputHigh} </h1>`;
+console.log (Math.floor (Math.random () * (+inputHigh - +inputLow) + 1) + +inputLow);
+} 
+else{
+const main = document.querySelector ("main");
+  main.innerHTML = `<h1> Type in the number form, idiot! </h1>`;
