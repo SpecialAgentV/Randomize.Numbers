@@ -1,0 +1,12 @@
+//simple dice roll
+function luckyCharm () { 
+  const blow = Math.floor( Math.random() * 6 ) + 1;
+  return (blow);
+}
+alert(luckyCharm());
+
+//functions can be saved and used. Check out this loaded die
+
+const loadedDie = luckyCharm () + 20; //there may of may not be an issue with this line. I was getting some <20 outputs. 
+console.log (`${loadedDie}? Wow, you're the luckiest woman on the planet! A nat ${loadedDie} out of 20!`;
+
