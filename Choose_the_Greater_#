@@ -1,0 +1,28 @@
+const n1 = prompt(`Pick one number`);
+const n2 = prompt (`Pick another number`);
+function Greater (n1,n2){
+  if (n1>n2){
+    `${n1} is greater than ${n2}`;
+    return n1;
+  } else {
+    `${n2} is greater than ${n1}`;
+    return n2;
+  }
+
+}
+console.log (`${Greater} is the higher number!`); //this will return the whole function not just the n1 or n2 
+
+//FIX #1
+const n1 = prompt(`Pick one number`);
+const n2 = prompt (`Pick another number`);
+function Greater (n1,n2){
+  if (n1>n2){
+   console.log( `${n1} is greater than ${n2}`); //This is the quick work around but I didn't want to have to make an individual one for each
+    return n1;
+  } else {
+    console.log (`${n2} is greater than ${n1}`);
+    return n2;
+  }
+
+}
+Greater (n1,n2);//puts prompted numbers as arguments when function is called 
