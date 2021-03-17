@@ -1,0 +1,17 @@
+function Rando (x,y){
+const Random = Math.floor (Math.random () * ((y - x) + 1)) + x;
+ return Random;
+
+} 
+
+//or
+
+//includes defaults and template literal
+function Rando (x=0,y=100){
+return Math.floor (Math.random () * ((y - x) + 1)) + x;
+
+} 
+console.log (Rando ());
+console.log (Rando (10,20));
+console.log (Rando (100,200));
+console.log (` ${Rando(135, 24680)} is your random number`);
