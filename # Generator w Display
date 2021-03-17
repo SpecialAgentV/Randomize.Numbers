@@ -8,6 +8,6 @@ const display = Math.floor (Math.random () * (+inputHigh - +inputLow) + 1) + +in
 main.innerHTML = `<h1>You got a ${display} between ${inputLow} and ${inputHigh} </h1>`;
 console.log (Math.floor (Math.random () * (+inputHigh - +inputLow) + 1) + +inputLow);
 } 
-else{
+else{ //seems to be a problem with this; deleting works
 const main = document.querySelector ("main");
   main.innerHTML = `<h1> Type in the number form, idiot! </h1>`;
