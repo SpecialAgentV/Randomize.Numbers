@@ -1,0 +1,27 @@
+let count = 0;
+while (count < 26){ // loop wants to run 26 times
+console.log();
+  count++;
+}
+
+//DO-WHILE LOOP
+
+function getRandomNumber(upper) {
+  return Math.floor( Math.random() * upper ) + 1;
+}
+ let counter = 0; 
+do{
+ console.log(` Random is ${ getRandomNumber(120)}`);
+   counter += 1;
+          } while (counter <10);
+          
+//WHILE LOOP
+
+function getRandomNumber(upper) {
+  return Math.floor( Math.random() * upper ) + 1;
+}
+let counter = 0;
+while (counter < 100) {
+ console.log(` Random is ${ getRandomNumber(120)}`);
+   counter += 1;
+          }
